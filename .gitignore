@@ -33,24 +33,20 @@ ghostdriver.log
 *.log
 
 # Project Specific - Data and Docs
-# Ignorando pastas de dados, documentos pesados e materiais de estudo
-data/
+# Ignorando conteúdo de pastas de dados, mas mantendo a estrutura via .gitkeep
+data/*
+!data/.gitkeep
+!data/raw/
+data/raw/*
+!data/raw/.gitkeep
+!data/processed/
+data/processed/*
+!data/processed/.gitkeep
 docs/
 arq/
 
-# Ignorar extensões de arquivos pesados ou gerados
-*.pdf
-*.zip
-*.parquet
-*.pptx
-*.csv
-*.txt
-*.xlsx
-
-# Manter a estrutura das pastas de dados se necessário (opcional)
-!data/.gitkeep
-!data/raw/.gitkeep
-!data/processed/.gitkeep
+# Ignorar o arquivo de instruções do agente
+GEMINI.md
 
 # IDEs
 .vscode/
