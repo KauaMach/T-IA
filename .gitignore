@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -17,43 +16,41 @@ parts/
 sdist/
 var/
 wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
-# Virtual Environments
+# Environments
+.venv
+env/
 venv/
-.venv/
 ENV/
-
-# Selenium / WebDriver
-chromedriver
-geckodriver
-ghostdriver.log
-*.log
-
-# Project Specific - Data and Docs
-# Ignorando conteúdo de pastas de dados, mas mantendo a estrutura via .gitkeep
-data/*
-!data/.gitkeep
-!data/raw/
-data/raw/*
-!data/raw/.gitkeep
-!data/processed/
-data/processed/*
-!data/processed/.gitkeep
-docs/
-arq/
-
-# Ignorar o arquivo de instruções do agente
-GEMINI.md
+env.bak/
+venv.bak/
 
 # IDEs
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# OS
-.DS_Store
-Thumbs.db
+# Project Specific - Data
+*.jsonl
+*.parquet
+*.pdf
+extracao-de-dados/dados/
+extracao-de-dados/extracao-diarios/images/
+extracao-de-dados/extracao-diarios/markdown/
+extracao-de-dados/extracao-docentes/images/
+extracao-de-dados/extracao-docentes/markdown/
+
+# Project Specific - Logs
+*.log
+extracao-de-dados/logs/
+extracao-de-dados/extracao-diarios/logs/
+extracao-de-dados/extracao-docentes/logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
